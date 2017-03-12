@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/ErgebnissText"
-        android:layout_width="376dp"
-        android:layout_height="38dp"
+        android:layout_width="372dp"
+        android:layout_height="46dp"
         android:background="#fce89c"
         android:text="0"
         android:textAlignment="center"
@@ -68,23 +68,23 @@
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Enter Divisor"
-        android:inputType="number"
-        app:layout_constraintLeft_toLeftOf="@+id/Dividend"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/DivisorLable"
+        app:layout_constraintLeft_toLeftOf="@+id/Dividend"
         app:layout_constraintTop_toTopOf="@+id/DivisorLable" />
 
     <EditText
         android:id="@+id/Dividend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter Dividend"
-        android:inputType="number"
-        android:textSize="18sp"
-        app:layout_constraintLeft_toRightOf="@+id/DividendLable"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Enter Dividend"
+        android:inputType="number|numberDecimal"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/DividendLable"
+        app:layout_constraintLeft_toRightOf="@+id/DividendLable"
         app:layout_constraintTop_toTopOf="@+id/DividendLable" />
 
     <Button
