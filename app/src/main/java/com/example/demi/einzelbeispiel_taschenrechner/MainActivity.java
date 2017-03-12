@@ -30,15 +30,21 @@ public class MainActivity extends AppCompatActivity {
        calcBtn.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+
+               try{
                //Werte holen
                Float dividend = Float.parseFloat(dividendText.getText().toString());
                Float divisor = Float.parseFloat(divisorText.getText().toString());
 
-               //Ergebnis berechnen
-               Float ergebnis = dividend / divisor;
+                   //Ergebnis berechnen
+                   Float ergebnis = dividend / divisor;
 
-               //an app weitergeben
-               ergebnisTextView.setText(Float.toString(ergebnis));
+                   //an app weitergeben
+                   ergebnisTextView.setText(Float.toString(ergebnis));
+
+               } catch (Exception e){
+                   ergebnisTextView.setText("Werte fehlen!");
+               }
 
 
            }
