@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //testB
+    //testBb
 
     TextView ergebnisTextView;     //Ergebniss wird dargestellt
 
