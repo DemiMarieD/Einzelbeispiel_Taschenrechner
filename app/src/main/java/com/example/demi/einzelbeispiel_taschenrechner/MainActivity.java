@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //test
+
     TextView ergebnisTextView;     //Ergebniss wird dargestellt
 
     EditText dividendText;          //Erster operant
